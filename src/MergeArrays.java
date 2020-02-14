@@ -29,7 +29,7 @@ public class MergeArrays {
 			if( last > arr2[j]){
 				arr1[i+1] = arr2[j];
 				arr2[j]= last;
-			}
+			}   
 		}
 		
 		
