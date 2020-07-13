@@ -3,24 +3,18 @@ package Stack;
 import java.util.Stack;
 
 class Node {
-	
 	int data;
 	Node next;
 }
 
-
 public class StackwithLinkedlist {
-
 	private Node top;
-	
 	public void StackwithLinkedlist(){
 		this.top=null;
 	}
 	
 	public void push(int x){
-		
 		Node node = new Node();
-		
 		if(node==null){
 			return;
 		}
@@ -29,27 +23,19 @@ public class StackwithLinkedlist {
 			top=node;
 	}
 	public void pop(){
-		
 		if(top==null){
 			System.out.println("empty stack");
 			return;
 		}
-		
-	
 		System.out.println("Removing --- "+ peek());
 		top = top.next;
-		
 	}
 	
 	public boolean isEmpty(){
-		
 		return top==null;
-		
 	}
 	
-	
 	public int peek(){
-
 		if(!isEmpty()){
 			return top.data;
 		}else{
@@ -59,13 +45,10 @@ public class StackwithLinkedlist {
 	}
 	
 	public void reverse()  {
-		
 		Node prev, curr, next;
 		curr = prev = top;
-		
 		curr = curr.next;
 		prev.next= null;
-		
 		while(curr!= null){
 			next= curr.next;
 			curr.next = prev;
@@ -94,7 +77,7 @@ public class StackwithLinkedlist {
 		sl.push(45);
 		
 		System.out.println("element at peek ---" + sl.peek());
-		sl.reverse();
+		//sl.reverse();
 		sl.display();
 		
 		

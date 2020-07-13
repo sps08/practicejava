@@ -6,21 +6,14 @@ public class EvalExpression {
 
 	public static void main(String[] args) {
 		
-		
 		System.out.println("1=================");
-		
 		String exp = "{()}[{}]";
 		if(balParenthesis(exp)){		
 			System.out.println("The expression is balanced");
-			
 		} else{
 			System.out.println("The expression is not balanced");
 		}
-		
-		
 		System.out.println("2=================");
-		
-		
 		String exp2 = "138*+";
 		System.out.println(evaluateExpression(exp2));
 	}
@@ -31,7 +24,6 @@ public class EvalExpression {
 		Stack<Character>stack = new Stack();
 		for (int i = 0;i<exp.length();i++){
 			if (exp.charAt(i) =='(' || exp.charAt(i)== '{' || exp.charAt(i)=='['){
-
 				stack.push(exp.charAt(i));
 			}
 			if (exp.charAt(i) ==')' || exp.charAt(i)== '}' || exp.charAt(i)==']'){
@@ -44,7 +36,6 @@ public class EvalExpression {
 				}
 			}
 		}
-
 		return true;
 	}
 	

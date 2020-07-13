@@ -65,12 +65,12 @@ public class Queue {
 		q.enQueue(20);
 		q.enQueue(30);
 		q.enQueue(40);
-		q.enQueue(50);
+		//q.enQueue(50);
 		System.out.println(q.getSize());
-		q.enQueue(150);
+		//q.enQueue(150);
 		q.deQueue();
 		//q.show();
-		System.out.println(q.getSize());
+	//	System.out.println(q.getSize());
 		System.out.println(q.isFull());
 		//System.out.println(q.getSize());
 		q.show();

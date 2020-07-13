@@ -9,8 +9,7 @@ public class LinkedList {
 	
 	 Node head = null;
 	
-	 static class Node { 
-		  
+	 static class Node {   
         int data; 
         Node next; 
         Node(int d) 
@@ -181,10 +180,6 @@ public class LinkedList {
 	            ptr1 = ptr1.next; 
 	        } 
 	    } 
-	
-	
-	
-	
 	
 	  void removeDuplicate(LinkedList list)  
 	    { 

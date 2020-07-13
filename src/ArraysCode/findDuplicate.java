@@ -10,9 +10,7 @@ public class findDuplicate {
 		int A[] = {1,2,3,4,4};
 		
 		//System.out.println("Duplicate Element is  "+ findDuplicateHashing(A));
-		
 		System.out.println("Duplicate Element is  "+ findDuplicateXOR(A));
-
 	}
 
 	private static String findDuplicateHashing(int[] a) {

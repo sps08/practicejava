@@ -38,10 +38,29 @@ public class Queue2 {
 		return capacity;
 		 
 	 }
+	 
+	 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		Queue2 q= new Queue2(10);
+		q.enQueue2(10);
+		q.enQueue2(20);
+		q.enQueue2(30);
+		q.enQueue2(40);
+		q.enQueue2(50);
+		//System.out.println(q.getSize());
+		q.enQueue2(150);
+		q.deQueue2();
+		//q.show();
+		//System.out.println(q.getSize());
+		//System.out.println(q.isFull());
+		//System.out.println(q.getSize());
+		//q.show();
+		//q.deQueue();
+		//q.enQueue(150);q.enQueue(110);q.enQueue(1410);
+		//q.show();
 	}
 
 }
